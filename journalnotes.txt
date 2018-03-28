@@ -1,0 +1,69 @@
+In this paper, the authors discuss their findings in a method for creating patch clamp techniques for observing ion channels across membranes. It's used to get high current resolution when studying the cell membrane. The scientists could observe the ion channels across them at level of the ion themselves. The patch clamp technique is a laboratory technique in electrophysiology used to study ionic currents in individual isolated living cells, tissue sections, or patches of cell membrane. The technique is especially useful in the study of excitable cells such as neurons, cardiomyocytes, muscle fibers, and pancreatic beta cells, and can also be applied to the study of bacterial ion channels in specially prepared giant spheroplasts. This method gives options for recording voltage or current without being restricted by the size of the cell. As long as the surface of the membrane is freely accessible, you can record across the membrane. Membranes are usually this way. There are limitations, the acetylcholine-activated channels are discussed. 
+
+During a patch clamp recording, a hollow glass tube known as a micropipette or patch pipette containing an electrolyte-containing solution and a recording electrode connected to an amplifier is brought into contact with the membrane of an isolated cell. Another electrode is placed in a bath surrounding the cell or tissue as a reference ground electrode. An electrical circuit can be formed between the recording and reference electrode with the cell of interest in between.
+
+The solution filling the patch pipette might match the ionic composition of the bath solution, as in the case of cell-attached recording, or match the cytoplasm, for whole-cell recording. The solution in the bath solution may match the physiological extracellular solution, the cytoplasm, or be entirely non-physiological, depending on the experiment to be performed. The researcher can also change the content of the bath solution (or less commonly the pipette solution) by adding ions or drugs to study the ion channels under different conditions.
+
+Depending on what the researcher is trying to measure, the diameter of the pipette tip used may vary, but it is usually in the micrometer range. This small size is used to enclose a membrane surface area or "patch" that often contains just one or a few ion channel molecules. This type of electrode is distinct from the "sharp microelectrode" used to puncture cells in traditional intracellular recordings, in that it is sealed onto the surface of the cell membrane, rather than inserted through it.
+
+The micropipette tip is heat polished in a microforge to produce a smooth surface that assists in forming a high resistance seal with the cell membrane. To obtain this high resistance seal, the micropipette is pressed against a cell membrane and suction is applied. A portion of the cell membrane is suctioned into the pipette, creating an omega-shaped area of membrane which, if formed properly, creates a resistance in the 10–100 gigaohms range, called a "giga-seal." The high resistance of this seal makes it possible to isolate electronically the currents measured across the membrane patch with little competing noise, as well as providing some mechanical stability to the recording.
+
+Whole-cell patch and perforated patch allow the researcher to study the electrical behavior of the entire cell, instead of single channel currents. The whole-cell patch, which enables low-resistance electrical access to the inside of a cell, has now largely replaced high-resistance microelectrode recording techniques to record currents across the entire cell membrane.
+
+The giga-seals must be prepared from the tissue-cultured cells of frogs. In adult tissue however individual cells are covered with surface coats and enzymatic cleaning of the cell surface. Here we describe a treatment procedure adequate for frog skeletal muscle fibers. Chromaffin cells of the adrenal medulla are innervated by the splanchnic nerve and secrete adrenaline (epinephrine), noradrenaline (norepinephrine), some dopamine, enkephalin and enkephalin-containing peptides, and a few other hormones into the blood stream.
+
+Preparing frog muscle fibers:
+1. Bathe cutaneous pectoris muscle at room temperature in normal frog.
+2. Overlying fibre can be cut away to get single layer of fibers.
+3. Endplates are supersede with Ringer solution for 20-40 min. 
+4. Perspex restricts flow of protease to endplate region of muscle
+5. Creates ~20 fibers firmly attached to skin and sternum
+6. Single fiber can be observed.
+
+Preparing rat muscle myoballs:
+1. Thigh muscles removed from rats.
+2. Dissociated in spinner flask w/ .025 % trypsin 
+3. Supernate removed and replaced with fresh trypsin until tissue completely dissociated.
+4. Cells were centrifuged, resuspended, plated, and incubated in CO2. 
+5. 2-3- days later, myoblasts fuse to make multinucleate myotubes.
+6. Most plates treated with cytosine arabinoside to prevent further growth of fibroblasts.
+
+Preparing chromatin cells:
+1. Bovine chromatin cells dispersed by perfusion with collagenase of adrenal gland.
+2. Let in short-term culture for up to 8 days
+
+Theoretical limits of resolution of patch clamp:
+Johnson noise of spectral density: SI(f) = 4 kT Re {Y (f)}. If model as simple parallel RC circuit, then Re { Y (f)} = 1/R. Integrating frequency over range of interest gives noise variance that decreases with increasing patch resistance. Noise of spectral density can be estimated with S1 = 2Iq with q as effective charge of current carrier and I is unidirectional current. 
+
+Intrinsic noise in Pipette given by Re{Y(f)}=(alpha^2)/(R(I+alpha^2)) with series RC circuit. Alpha is 2pi*f*R*C. 
+
+Film solution creeps up on outer wall of uncoated pipette, and Sylgard coating reduces noise considerably. Capillaries of pipette glass can be significant. 
+
+Pipette across resistance and capacitance of the tip of the pipette create noise source.
+
+Noise of the current-to-voltage converter: 
+Johnson noise in the resistor and operational amplifier itself. Spectrum S1 (f) = [2*pi*f(C_p+C_ln)]^2*S_V(f) where S_V is amplifier voltage noise spectral density. This is reduced by minimizing C_p using low solution level and avoiding unnecessary shielding of pipette and holder. 
+
+Capacitance Transient Cancellation: 
+The authors rounded command signal to reduce peak current in the transient. They reduced capacitance to be charged as much as possible. They used a transient cancellation circuit o inject proper amount of charge directly into the pipette so I-V converter is required to supply only a small error current during the voltage step.
+
+Creating gigaseal: 
+Gigaseal can be created with cleaner tip via filtered solutions in bath as well as in pipette and using a fresh pipette for each seal. Gigaseals occurs within seconds when negative pressure is applied to tip. Membrane at pipette tip is distorted and forms ohm-shaped protrusion. 
+
+With gigaseal created, they observed improved current recordings. The total cell membrane area is very large with respect to the patch area. They found an increased amplitude time resolution of the time course of channel opening. The patch membrane potential can be changed. The extracellular ion composition can be changed. 
+
+There's an equivalent circuit shown for the visible formation. It's two RC-circuits in series with leakage resistance. The conductance of the channel is G = R_i^2 / ((R_i+R_o)(R_c*R_o+R_c*R_i+R_i*R_o)) with tau = R_c||R_i||R_o*(C_o+C_o) . 
+
+Cell-free membrane patches formed at the pipette tip. They formed by selectively disrupting either the inner or outer membrane of the vesicle. Single channel current recordings from "cell-free" membrane patches could be obtained. Using either inside-out or outside-out patches, the intact membrane can be studied as before. 
+
+Several variations of the basic technique can be applied, depending on what the researcher wants to study. The inside-out and outside-out techniques are called "excised patch" techniques, because the patch is excised (removed) from the main body of the cell. Cell-attached and both excised patch techniques are used to study the behavior of individual ion channels in the section of membrane attached to the electrode.
+
+With the inside-out patch technique, a patch of the membrane is attached to the patch pipette, detached from the rest of the cell, and the cytosolic surface of the membrane is exposed to the external media, or bath.[7] One advantage of this method is that the experimenter has access to the intracellular surface of the membrane via the bath and can change the chemical composition of what the surface of the membrane is exposed to. This is useful when an experimenter wishes to manipulate the environment at the intracellular surface of single ion channels. For example, channels that are activated by intracellular ligands can then be studied through a range of ligand concentrations. When the outer membrane of the vesicle is disrupted, the cytoplasmic face of the inner membrane is exposed to the bath solution. 
+
+To achieve the inside-out configuration, the pipette is attached to the cell membrane as in the cell-attached mode, forming a gigaseal, and is then retracted to break off a patch of membrane from the rest of the cell. Pulling off a membrane patch often results initially in the formation of a vesicle of membrane in the pipette tip, because the ends of the patch membrane fuse together quickly after excision. The outer face of the vesicle must then be broken open to enter into inside-out mode; this may be done by briefly taking the membrane through the bath solution/air interface, by exposure to a low Ca2+ solution, or by momentarily making contact with a droplet of paraffin or a piece of cured silicone polymer.
+
+With the outside-out technique, the formation of an outside-out patch begins with a whole-cell recording configuration. After the whole-cell configuration is formed, the electrode is slowly withdrawn from the cell, allowing a bulb of membrane to bleb out from the cell. When the electrode is pulled far enough away, this bleb will detach from the cell and reform as a convex membrane on the end of the electrode (like a ball open at the electrode tip), with the original outside of the membrane facing outward from the electrode The name "outside-out" emphasizes both this technique's complementar­ity to the inside-out technique, and the fact that it places the external rather than intracellular surface of the cell membrane on the outside of the patch of membrane, in relation to the patch electrode. When the inner membrane of the vesicle is disrupted, the cytoplasmic face of the outer membrane of the vesicle is exposed to the pipette solution with the extracellular face to the bath solution. 
+
+To check whether the cytoplasmic face of the patch equilibrates with the experimental solution, the authors measured I-V relations of ACh-activated channels under various iconic conditions in both configurations. The sodium concentration reduced on one side of the membrane correlated with one branch of the I-V relation changing strongly while the other branch wasn't affected much. There were overlapping I-V relationships when ionic compositions on both sides of the membrane were the same. Changes in the shape of the I-V relations could be reversed and reproduced on one patch to another. Changes in I-V relation could be caused by disrupted membrane of the vesicle. Changes in curator and changes occurring instantaneously point towards efficient exchange of ionic contents between interior of a vesicle and compartment neighboring its disrupted membrane.
+
+Outside-out patches could demonstrate studying total ionic currents in small cells. Resistance mainly due to cell membrane since markedly larger resistances were obtained when using CsCl solution in pipette interior and tetrodoxin in the bath. Depolarizing voltage commands elicited Na and K currents that could be resolved after compensation of cell capacitance current. The pipette creates a low-resistance access to cell interior that was used to measure intracellular potentials under current clamp conditions. Resting potential showed large fluctuations, probably due to spontaneous opening and closing of ionic channels. Pipette withdrawn from the cell could be sealed again, and pipette input capacitance dropped back to value close to that observed during establishment of initial gigaseal. This method avoids leakages due to cell penetration with microelectromechanical and offers possibility of studying macroscopic currents and single channel currents in same cell.
